@@ -1,13 +1,34 @@
-import './styles.css';
+// // import { promesaLenta, promesaMedia, promesaRapida } from './js/promesas';
+// import { buscarHeroe, buscarHeroeAsync } from './js/promesas';
 
-import { Todo, TodoList } from './classes';
-import { crearTodoHtml } from './js/componentes';
+// // promesaLenta.then( console.log );
+// // promesaMedia.then( console.log );
+// // promesaRapida.then( console.log );
 
-export const todoList = new TodoList();
+// // Promise.race( [promesaLenta, promesaMedia, promesaRapida ])
+// //         .then( console.log )
+// //         .catch( console.warn );
 
-todoList.todos.forEach( todo  => crearTodoHtml( todo ));
-// todoList.todos.forEach(crearTodoHtml); linea de arriba simplificada
+// buscarHeroe('capi2')
+//         .then( heroe => console.log( heroe ) )
+//         .catch( console.warn );
+
+// buscarHeroeAsync('iron2')
+//         .then( heroe => console.log( heroe ) )
+//         .catch( console.warn );
 
 
+import { obtenerHeroesArr, obtenerHeroeAwait, heroesCiclo, heroeIfAwait } from './js/await';
 
+// console.time('await');
 
+// obtenerHeroeAwait('capi2')
+//     .then( heroe => {
+//         console.log(heroe);
+
+//         console.timeEnd('await');
+// } ).catch( console.warn );
+
+// heroesCiclo();
+
+heroeIfAwait('iron');
