@@ -51,7 +51,7 @@ export const heroeIfAwait = async (id) => {
     if( (await buscarHeroeAsync(id)).nombre === 'Ironman' ){
         console.log('Es el mejor de todos');
     } else {
-        console.log('Naaaaaa ');
+        console.log('Naaaaaa');
     }
 }
 
